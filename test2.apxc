@@ -2,6 +2,8 @@
 //the link for video is  https://www.youtube.com/watch?v=z5jZ9lrSpqk&t=44s
 public class Abc {
   public static void getid(){
+    
     Id AccountID = [SELECT ID FROM Account].Id;
+
   }
 }
