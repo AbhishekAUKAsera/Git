@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+    <!--Include StreamingApiHandler child component and pass channel name to subscribe
+     ex: "/topic/AccountSpy" is my pushtopic channel name
+	 once the event is fired, it will handled in handleMessage controller method -->
+	<c:StreamingApiHandler channelName="/topic/AccountSpy" onStreamEvent="{!c.handleMessage}" />
+    
+    <lightning:card footer="Please check browser console for latest captured event" 
+                    title="Account Spy"
+                    iconName="standard:search">
+        <p class="slds-p-horizontal_small">
+            This is blank component to demonstrate streaming api usage in lightning component.
+        </p>
+    </lightning:card>
+</aura:component>
