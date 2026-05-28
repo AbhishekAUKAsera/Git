@@ -5,5 +5,13 @@ public class Abc {
     
     Id AccountID = [SELECT ID FROM Account].Id;
 
+    Account acc = [SELECT Id, Name FROM Account];
+
+    if(acc.Id != null){
+      acc.Name = 'Learn Git tutorial Properly';
+
+      update acc;
+    }
+
   }
 }
