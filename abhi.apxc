@@ -2,3 +2,7 @@
 //i was not able to see the second option lets try to make the changes again
 system.debug('Bye World');
 
+public class yuvan {
+    public string height;
+    public string weight;
+}
